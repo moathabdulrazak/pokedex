@@ -1,1 +1,13 @@
 /* BASIC STYLES HERE */
+
+
+.img-size {
+  height: 400px;
+  width: 350px;
+  transform: translateX(10px);
+}
+
+body {
+  background-image: url('https://thumbs.gfycat.com/HugeVengefulAmericanbittern-max-1mb.gif');
+  background-size: cover;
+}

@@ -15,31 +15,47 @@
   <title>pokedex</title>
 </head>
 
+
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">pokedex</span>
-      </a>
-    </nav>
+    <h1 class="text-center pt-2 m-auto"> POKEDEX</h1>
   </header>
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+    <button class="btn btn-danger col-12 d-flex justify-content-end" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">my Pokemons</button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">my poke's!</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="my-poke" class="col-6 "></div>
       </div>
     </div>
+    <section class="row text-center container-fluid">
+      <div id="pokemon" class="col-2">
+      </div>
+      <!-- <div class="col-9">
+        <h1 class="text-center">name</h1>
+        <img src="" alt="">
+      </div>
+      <div class="card">
+        <h3></h3>
+        <h3></h3>
+        <h3></h3>
+            <div class="col-3 card selectable p-1"> ${pokemon.name}</div>
+          </div> -->
+      <div class="col-8 text-center" id="activePokemon">
+
+      </div>
+    </section>
   </main>
-  <footer class="bg-dark text-light">
+  <!-- <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by CodeWorks</small></p>
     </div>
-  </footer>
-
+  </footer> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
@@ -47,5 +63,7 @@
     integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
   <script src="app/App.js" type="module"></script>
 </body>
+
+
 
 </html>
